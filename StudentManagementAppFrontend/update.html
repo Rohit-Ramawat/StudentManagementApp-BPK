@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="./update.css">
+</head>
+<body>
+    <h2>Student Details Update Form</h2>
+
+    <div id="updateContainer">
+        
+        <form id="updateForm">
+
+            <label>Roll Number:</label>
+            <input min="1" type="number" id="rollNumber" name="rollNumber" required>
+
+            <label>First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label>Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label>Major:</label>
+            <select id="major" name="major" required>
+                <option value="ARTS">ARTS</option>
+                <option value="COMMERCE">COMMERCE</option>
+                <option value="SCIENCE">SCIENCE</option>
+            </select>
+
+            <label>Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label>Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="MALE">MALE</option>
+                <option value="FEMALE">FEMALE</option>
+            </select>
+
+            <label>Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    
+    <script src="./update.js"></script>
+</body>
+</html>
